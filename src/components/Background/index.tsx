@@ -14,7 +14,7 @@ export function Background({ children }: Props) {
   return (
     <LinearGradient
       style={styles.container}
-      colors={[primary, '#0A1033']}
+      colors={[primary,'#0A1033']}
     >
       {children}
     </LinearGradient>
