@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, Text, Image, ImageSourcePropType } from 'react-native';
 
-import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './style';
-import { theme } from '../../global/style/theme';
 
 type Props = RectButtonProps & {
   title: string;
@@ -18,9 +17,16 @@ export function Category({
   icon,
 }: Props) {
 
+  const navigation = useNavigation();
+
+  function handleCategory() {
+    navigation.navigate(title);
+  }
+
   return (
     <RectButton
       style={styles.container}
+      onPress={handleCategory}
     >
       <View style={styles.content}>
         <Image

@@ -4,7 +4,6 @@ import { View, Text } from 'react-native';
 import { Profile } from '../../components/Profile';
 import { CategorySelect } from '../../components/CategorySelect';
 
-
 import { styles } from './style';
 import { NewsSelect } from '../../components/NewsSelect';
 

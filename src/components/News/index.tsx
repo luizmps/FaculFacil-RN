@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, Text, View, Image, ImageSourcePropType } from 'react-native';
+import { Text, View, Image, ImageSourcePropType } from 'react-native';
 
 import { styles } from './style';
 
