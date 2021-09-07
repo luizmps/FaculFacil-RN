@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="FaculFacil" height="80" title="Plant Manager" src="assets/Icon.png" />
+  <img alt="FaculFacil" height="80" title="Plant Manager" src="https://github.com/luizmps/FaculFacil-RN/blob/main/assets/icon.png?raw=true" />
 </h1>
 
 
