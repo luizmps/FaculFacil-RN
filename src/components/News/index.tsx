@@ -1,21 +1,24 @@
 import React from 'react';
 import { Text, View, Image, ImageSourcePropType } from 'react-native';
 
+import DateIcon from '../../assets/Icons/Date.svg';
+
 import { styles } from './style';
 
 type Props = {
+  type: string
   title: string;
   icon: ImageSourcePropType;
   description: string;
-  data?: string;
+  date?: string;
 }
 
-export function News({ title, icon, description, data }: Props) {
+export function News({ type, title, icon, description, date }: Props) {
 
-  function showReadMore(string: any) {
-    const description = string;
-    if (description.length > 18) {
-      const data = description.substr(0, 20)
+  function showReadMore(description: any) {
+    const descriptionText = description;
+    if (descriptionText.length > 18) {
+      const data = descriptionText.substr(0, 20)
       return (
         <Text style={styles.textBody}>
           {data + ' - '}
@@ -27,10 +30,21 @@ export function News({ title, icon, description, data }: Props) {
     } else {
       return (
         <Text style={styles.textBody}>
-          {description}
+          {descriptionText}
         </Text>
       )
     }
+  }
+
+  function showDateEvent(date: string | undefined) {
+    return (
+      <View style={{ flexDirection: 'row', marginLeft: 10, alignItems: 'center' }}>
+        <DateIcon style={{ marginBottom: 4 }} />
+        <Text style={styles.textBody}>
+          {date}
+        </Text>
+      </View>
+    )
   }
 
   return (
@@ -47,9 +61,11 @@ export function News({ title, icon, description, data }: Props) {
           <Text style={styles.title}>
             {title}
           </Text>
-
-          {showReadMore(description)}
-
+          {type == 'Date' ?
+            showDateEvent(date)
+            :
+            showReadMore(description)
+          }
         </View>
 
       </View>

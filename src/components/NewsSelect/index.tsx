@@ -14,11 +14,12 @@ export function NewsSelect() {
         keyExtractor={item => item.id}
         renderItem={({ item }) =>
           <News
-            icon={item.icon}
-            title={item.title}
             key={item.id}
+            type={item.type}
+            title={item.title}
+            icon={item.icon}
             description={item.description}
-            data={item.data}
+            date={item.data}
           />
         }
       />
