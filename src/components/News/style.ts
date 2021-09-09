@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
   },
   readMore: {
     fontFamily: theme.fonts.text700bold,
-    color: theme.colors.textColorOpac,
+    color: theme.colors.textColor,
     fontSize: 15,
     marginLeft: 10
   }

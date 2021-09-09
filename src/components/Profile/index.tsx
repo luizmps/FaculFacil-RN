@@ -6,7 +6,11 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 import { styles } from './style';
 
-export function Profile() {
+type ProfileProps = {
+  onPress?: any;
+}
+
+export function Profile({ onPress }: ProfileProps) {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
@@ -34,7 +38,10 @@ export function Profile() {
 
       </View>
 
-      <RectButton style={styles.logoutBtn}>
+      <RectButton
+        style={styles.logoutBtn}
+        onPress={onPress}
+      >
         <MaterialIcons name="logout" size={24} color="white" />
       </RectButton>
     </View>

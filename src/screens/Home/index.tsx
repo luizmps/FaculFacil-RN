@@ -6,14 +6,24 @@ import { CategorySelect } from '../../components/CategorySelect';
 
 import { styles } from './style';
 import { NewsSelect } from '../../components/NewsSelect';
+import { LogoutModal } from '../../components/LogoutModal';
 
 export function Home() {
 
+  const [isOpened, setIsOpened] = useState(false);
 
   return (
     <View style={styles.container}>
+      {isOpened &&
+        <LogoutModal
+          onPressClose={() => setIsOpened(!isOpened)}
+        />
+      }
+
       <View style={styles.header}>
-        <Profile />
+        <Profile
+          onPress={() => setIsOpened(!isOpened)}
+        />
       </View>
 
       <CategorySelect />
@@ -21,7 +31,6 @@ export function Home() {
         <Text style={styles.headerContent}>Noticias e Eventos</Text>
         <NewsSelect />
       </View>
-
     </View>
   )
 }
