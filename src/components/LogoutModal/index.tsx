@@ -22,7 +22,11 @@ export function LogoutModal({ onPressExit, onPressClose }: ModalProps) {
                 colors={[primary, '#0A1033']}
             >
                 <Text style={styles.modalHeader}>
-                    Deseja sair do FaculFacil?
+                    Deseja sair do Facul
+                    <Text style={styles.modalHeaderText}>
+                        Facil
+                    </Text>
+                    ?
                 </Text>
                 <View style={styles.modalContent}>
                     <RectButton onPress={onPressClose}>

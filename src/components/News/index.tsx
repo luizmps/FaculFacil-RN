@@ -48,27 +48,24 @@ export function News({ type, title, icon, description, date }: Props) {
   }
 
   return (
-    <View >
-      <View style={styles.container}>
-        <View style={styles.portainer}>
-          <Image
-            source={icon}
-            style={{ width: 40, height: 40 }}
-          />
-        </View>
-
-        <View>
-          <Text style={styles.title}>
-            {title}
-          </Text>
-          {type == 'Date' ?
-            showDateEvent(date)
-            :
-            showReadMore(description)
-          }
-        </View>
-
+    <View style={styles.container}>
+      <View style={styles.portainer}>
+        <Image
+          source={icon}
+          style={{ width: 40, height: 40 }}
+        />
       </View>
-    </View >
+
+      <View>
+        <Text style={styles.title}>
+          {title}
+        </Text>
+        {type == 'Date' ?
+          showDateEvent(date)
+          :
+          showReadMore(description)
+        }
+      </View>
+    </View>
   )
 }

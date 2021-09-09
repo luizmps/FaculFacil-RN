@@ -22,6 +22,11 @@ export const styles = StyleSheet.create({
         fontFamily: theme.fonts.text700bold,
         marginTop: 20,
     },
+    modalHeaderText: {
+        fontSize: 18,
+        color: theme.colors.primaryButton,
+        fontFamily: theme.fonts.text700bold,
+    },
     modalContent: {
         flexDirection: 'row',
         marginTop: 20,

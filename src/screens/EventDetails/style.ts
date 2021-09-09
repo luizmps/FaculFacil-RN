@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
     },
     headerBackground: {
         backgroundColor: '#1D2766',
-        marginBottom: 32,
     },
     header: {
         width: '100%',
@@ -36,58 +35,54 @@ export const styles = StyleSheet.create({
         fontSize: 20,
     },
     body: {
+        flex: 1,
+    },
+    bodyImage: {
         width: '100%',
-        height: '100%',
+        height: 234,
+    },
+    content: {
+        flex: 1,
+        padding: 25,
+    },
+    contentHeader: {
+        justifyContent: 'space-between',
         alignItems: 'center',
+        flexDirection: 'row',
+        marginBottom: 20,
     },
-    schoolCardBackgroundBorder: {
-        width: 343,
-        height: 280,
-        borderRadius: 8,
-        alignItems: 'center',
-        justifyContent: 'center',
+    imageWrapper: {
+        borderRadius: 30,
+        borderColor: "#1D2766",
+        borderWidth: 2,
     },
-    schoolCardBackground: {
-        width: 340,
-        height: 277,
-        borderRadius: 8,
+    contentHeaderImage: {
+        height: 50,
+        width: 50,
+        borderRadius: 30,
     },
-    headerLogo: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 5,
+    autorName: {
+        fontSize: 14,
+        fontFamily: theme.fonts.text700bold,
+        marginLeft: 10,
+        color: theme.colors.textColor,
     },
-    headerLogoLeft: {
-        fontSize: 24,
+    postDays: {
+        fontSize: 14,
+        fontFamily: theme.fonts.text700bold,
+        color: theme.colors.textColorOpac,
+    },
+    contentBody: {
+
+    },
+    eventTitle: {
+        fontSize: 20,
         fontFamily: theme.fonts.text700bold,
         color: theme.colors.textColor,
     },
-    headerLogoRight: {
-        color: theme.colors.primaryButton
-    },
-    bodySchoolCard: {
-        flexDirection: 'row',
-    },
-    cardPicture: {
-        backgroundColor: '#fff',
-        width: 98,
-        height: 102,
-        borderRadius: 8,
-        marginLeft: 18,
-        marginTop: 45,
-    },
-    informations: {
-        marginLeft: 20,
-    },
-    infoTitles: {
-        fontSize: 14,
-        fontFamily: theme.fonts.text700bold,
-        color: theme.colors.primaryButton,
-        marginBottom: -5
-    },
-    infoContent: {
-        fontSize: 14,
-        fontFamily: theme.fonts.text700bold,
+    eventBody: {
+        fontSize: 15,
+        fontFamily: theme.fonts.text500,
         color: theme.colors.textColor,
     }
-});
+})
