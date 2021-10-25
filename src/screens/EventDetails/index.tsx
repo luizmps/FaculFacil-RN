@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, useWindowDimensions } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome5 } from '@expo/vector-icons';
 import { RectButton } from 'react-native-gesture-handler';
 
 import { useNavigation } from '@react-navigation/native';
@@ -44,6 +44,12 @@ export function EventDetails({ route }: any) {
                         <Ionicons name="arrow-back" size={24} color={theme.colors.textColor} />
                     </RectButton>
                     <Text style={styles.headerText}>Detalhes</Text>
+                    <RectButton
+                        style={styles.shareButton}
+                        onPress={returnHome}
+                    >
+                        <FontAwesome5 name="share-alt" size={24} color={theme.colors.primaryButton} />
+                    </RectButton>
                 </View>
             </LinearGradient>
             <ScrollView>

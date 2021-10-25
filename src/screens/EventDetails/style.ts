@@ -29,6 +29,16 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    shareButton: {
+        right: 0,
+        width: 50,
+        height: 50,
+        marginRight: 14,
+        position: 'absolute',
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
     headerText: {
         fontFamily: theme.fonts.text500,
         color: theme.colors.textColor,

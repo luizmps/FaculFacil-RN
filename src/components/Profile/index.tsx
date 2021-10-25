@@ -16,7 +16,7 @@ export function Profile({ onPress }: ProfileProps) {
       <View style={styles.body}>
 
         <Image
-          source={{ uri: "https://github.com/luizmps.png" }}
+          source={{ uri: "https://avatars.githubusercontent.com/u/25032049?v=4" }}
           style={styles.avatar}
         />
 
