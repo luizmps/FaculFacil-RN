@@ -5,6 +5,7 @@ import { theme } from '../../global/style/theme';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
   },
   cardBackground: {
     width: '95%',
@@ -18,15 +19,17 @@ export const styles = StyleSheet.create({
   },
   headerText: {
     fontFamily: theme.fonts.text700bold,
-    fontSize: 19,
     color: '#FFFF',
     padding: 2,
   },
-  bodyCard: {
-    flexDirection: 'row',
+  body: {
     marginLeft: 10,
     marginTop: 3,
-    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  card: {
+    marginRight: 20,
   },
   bodyHeader: {
     fontFamily: theme.fonts.text700bold,
@@ -35,21 +38,12 @@ export const styles = StyleSheet.create({
     marginTop: 2,
     marginBottom: 2,
   },
-  bodyContent: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   bodyText: {
-    fontFamily: theme.fonts.text500,
+    fontFamily: theme.fonts.text700bold,
     color: '#FFFF',
-    textAlign: 'center',
+    fontSize: 19,
     marginTop: 2,
-    marginBottom: 2,
+    marginBottom: 10,
+    textAlign: 'center'
   },
-  separator: {
-    width: '98%',
-    borderBottomColor: theme.colors.primaryButton,
-    borderBottomWidth: 1,
-  }
 });

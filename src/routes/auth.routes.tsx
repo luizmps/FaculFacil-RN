@@ -5,7 +5,9 @@ import { Home } from "../screens/Home";
 import { SingIn } from "../screens/SingIn";
 import { SchoolCard } from "../screens/SchoolCard";
 import { EventDetails } from "../screens/EventDetails";
-import { ScheduleScreen } from "../screens/ScheduleScreen";
+import { Schedule } from "../screens/Schedule";
+import { Contacts } from "../screens/Contacts";
+import { Notas } from "../screens/Notas";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -33,7 +35,15 @@ export function AuthRoutes() {
       />
       <Screen
         name="Grade"
-        component={ScheduleScreen}
+        component={Schedule}
+      />
+      <Screen
+        name="Notas"
+        component={Notas}
+      />
+      <Screen
+        name="Contatos"
+        component={Contacts}
       />
       <Screen
         name="Events"

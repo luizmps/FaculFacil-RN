@@ -13,7 +13,7 @@ import { ScheduleItem } from '../../components/ScheduleItem';
 
 import { schedule } from '../../utils/schedule';
 
-export function ScheduleScreen() {
+export function Schedule() {
 
   const navigation = useNavigation();
 
