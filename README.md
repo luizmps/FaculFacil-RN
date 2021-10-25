@@ -4,7 +4,7 @@
 
 
 ## 💻 Projeto
-Aplicativo de para axuliar estudantes a acessar a plataforma de suas faculdades de forma simplicitada.
+Aplicativo de para auxiliar estudantes a acessar a plataforma de suas faculdades de forma simplicitada.
 
 ## 🔖 Layout
 
